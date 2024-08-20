@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /*Simple selector*/
+        p {
+            text-align: justify;
+            color: blue;
+        }
+
+        /*CSS Id Selector*/
+
+        #para1 {
+            text-align: center;
+            color: blue;
+        }
+
+        /*class selector*/
+        p.mca {
+            text-align: justify;
+            color: red;
+        }
+
+        a:visited {
+            color: rgb(52, 176, 52);
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: hotpink;
+        }
+
+        /* selected link */
+        a:active {
+            color: blue;
+        }
+
+        p.mba {
+            text-align: justify;
+            color: green;
+        }
+
+        /*id selector*/
+        .faculty {
+            text-align: justify;
+            color: brown;
+        }
+        
+
+
+        div.mca {
+            width: 50%;
+            /* background-color: rgb(33, 181, 132); */
+            padding: 6px;
+            padding-right: 20px;
+            margin: 3px;
+            border-right: 2px solid black;
+            align-items: center;
+        }
+
+        div.mba {
+            width: 50%;
+            /* background-color: gray; */
+            padding: 6px;
+            margin: 3px;
+            align-items: center;
+
+        }
+
+        .imgcont {
+            background-color: rgb(150, 226, 226);
+
+            height: 400px;
+            border: 3px solid black;
+            display: flex;
+        }
+
+        div.course {
+            display: flex;
+            background-color: rgb(201, 197, 190);
+        }
+
+        .img1 img {
+            object-fit: fill;
+            height: 100%;
+            width: 100%;
+
+        }
+
+        .img2 img {
+            object-fit: fill;
+            height: 100%;
+            width: 100%;
+           
+        }
+
+        .img1 {
+            width: 80%;
+        }
+
+         /* parebd div */
+        .imeages {
+            background-color: aquamarine;
+            display: flex;
+        }
+        .content{
+            height: 200px;
+            width: 100%;
+            background-color: rgb(209, 207, 204);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="imeages">
+        <div class="img1">
+            <img src="https://admissionwala.in/storage/productimages/1709288970mainbuilding.webp" alt="">
+        </div>
+
+        <div class="img2" style="width: 50%;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUdA_WBLfSDM78ea0No_fV5Gr5rBm2ImOayg&s"
+                alt="">
+        </div>
+    </div>
+    <div class="cit">
+        <h1 id="para1">Cambridge Institute of Technology</h1>
+        <p>The world is changing exponentially and so are we. Cambridge Institute of Technology have always been in
+            the
+            forefront among providers of quality education in Karnataka and leaders in transforming more than 15000
+            lives.
+            Meeting the fast pace of global change, CIT is accelerating the transformation within the institution to
+            make a
+            better innovative world.</p>
+    </div>
+
+
+    <div class="course">
+        <div class="mca">
+            <h2>Master of computer Applications</h2>
+            <p class="mca">
+                The MCA course covers various aspects of computational theory like computer organisation, data
+                structure,
+                programming like C, C++, Java, Python, Algorithm design and optimization, network and database
+                management,
+                mobile technologies, etc.
+                As the IT and the software industry are dynamic and fast growing, the programme is designed keeping in
+                view the
+                requirements of the current industry. The programme therefore, aims at imparting comprehensive knowledge
+                with
+                equal emphasis on theory and practice.
+
+                <a href="mca.html">Faculty Details click here</a>
+        </div>
+
+        <div class="mba">
+            <h2>Master of Business Adminstration</h2>
+            <p class="mba">
+                As Bengaluru’s leading provider of business education and insight, we also offer a range of other
+                postgraduate
+                degrees in management, economics, finance and entrepreneurship.
+                Jointly owned by the business community and Cambridge MBA, we give students the knowledge and experience
+                they
+                need to make a lasting impact in the workplace – and on the world at large.
+            </p>
+            <a href="mba.html">Faculty Details click here</a>
+        </div>
+    </div>
+    <div class="content">
+
+    </div>
+</body>
+
+</html>
