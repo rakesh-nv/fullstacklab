@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Element Selector for all paragraphs */
+      p {
+        color: blue;
+      }
+
+      /* Class Selector for a specific paragraph */
+      .special {
+        color: red;
+      }
+      .parent {
+        font-size: 30px;
+      }
+
+      .child {
+        font-size: 16px;
+        color: green;
+      }
+      #identifier {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Element Selector applied to all paragraphs -->
+    <p>This is a red text.</p>
+
+    <!-- Class Selector applied to a specific paragraph -->
+    <p class="special">This is another red text.</p>
+    <h1 id="identifier">This is identifer selector</h1>
+    <!-- Descendant Selector applied to the child paragraph inside .child div -->
+    <div class="parent">
+      <p>Parent element with font-size of 30px</p>
+      <div class="child">
+        <p>Child element with corrected font-size of 16px and color of green</p>
+      </div>
+    </div>
+  </body>
+</html>

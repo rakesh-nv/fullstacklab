@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .error {
+        color: red;
+      }
+      #demo {
+        height: 300px;
+        width: 450px;
+        background: rgb(222, 146, 31);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid;
+        border-radius: 30px;
+      }
+      #registrationForm {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* background-color: aliceblue; */
+        width: 300px;
+        height:150px;
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <div id="demo">
+      <form id="registrationForm" onsubmit="return validateForm()">
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          onblur="validateUsername()"
+        />
+        <span id="usernameError" class="error"></span>
+        <br />
+        <br />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          onblur="validatePassword()"
+        />
+        <span id="passwordError" class="error"></span>
+        <br />
+        <br />
+        <input type="submit" value="Register" style="border-radius: 100px ; padding:10px;" />
+      </form>
+    </div>
+
+    <script>
+      function validateForm() {
+        // Validate username
+        if (!validateUsername()) {
+          return false;
+        }
+
+        // Validate password
+        if (!validatePassword()) {
+          return false;
+        }
+
+        // Form is valid
+        alert("Registration successful!");
+        return true;
+      }
+
+      function validateUsername() {
+        const username = document.getElementById("username").value;
+        constusernameError = document.getElementById("usernameError");
+
+        if (username.trim() === "") {
+          usernameError.textContent = "Username cannot be empty.";
+          return false;
+        } else {
+          usernameError.textContent = "";
+          return true;
+        }
+      }
+
+      function validatePassword() {
+        const password = document.getElementById("password").value;
+        constpasswordError = document.getElementById("passwordError");
+
+        if (password.trim() === "") {
+          passwordError.textContent = "Password cannot be empty.";
+          return false;
+        } else if (password.length < 8) {
+          passwordError.textContent =
+            "Password must be at least 8 characters long.";
+          return false;
+        } else {
+          passwordError.textContent = "";
+          return true;
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text Input Control</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <style>
+    #demo1 {
+      height: 500px;
+      width: 500px;
+      background: rgb(222, 146, 31);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 2px solid;
+      border-radius: 30px;
+    }
+    form {
+      padding: 30px;
+      /* background-color: wheat; */
+      width: 300px;
+      position: absolute;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+  <body>
+    <div id="demo1">
+      <form>
+        <b>USER REGISTRATION FORM</b>
+        <br /><br />
+        <label for="user_name">Enter User name : </label>
+        <input type="text" name="user_name" required />
+        <br /><br />
+        <label for="password">Enter Password : </label>
+        <input type="password" name="password" required />
+        <br /><br />
+        <label for="email">Enter Email id :</label>
+        <input type="text" name="email" required /> 
+        <br /><br />
+        <label for="password">Repeat Password : </label>
+        <input type="password" name="rpassword" required />
+        <br /><br />
+        <p>
+          By creating an account you agree to our
+          <a href="#">Terms & Privacy</a>.
+        </p>
+        <br />
+        <input
+          type="submit"
+          name="submit"
+          value="Submit"
+          style="border-radius: 15px; padding: 6px"
+        />
+        <br /><br />
+        <p>Already have an account? <a href="#">Sign in</a>.</p>
+      </form>
+    </div>
+  </body>
+</html>
